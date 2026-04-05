@@ -39,11 +39,11 @@ print(message_1)
 print(message_2)
 print(message_3)
 
-# Exercise
+# E. EXERCISE
 
 text = """ Python is a powerful programming language. It's easy to learn and versatile!
 You can use Python for web development, data science, and automation. The syntax is clean and readable.
-This make Python perfect for beginners and experts alike"""
+This make Python perfect for beginners and experts alike."""
 
 # Answer from ChatGPT
 # Count characters (including spaces)
@@ -53,21 +53,30 @@ char_count = len(text)
 words = text.split()
 word_count = len(words)
 
-# Count sentences (based on ., !, ?)
+# Count sentences (split by ., !, ?)
 import re
 sentences = re.split(r'[.!?]+', text)
 # Remove empty strings
 sentences = [s for s in sentences if s.strip()]
 sentence_count = len(sentences)
 
-# Print results
+# Output results
 print("Characters:", char_count)
 print("Words:", word_count)
 print("Sentences:", sentence_count)
 
+# Explanation:
+# Characters → len(text) counts everything (including spaces and punctuation).
+# Words → split() separates text by spaces.
+# Sentences → re.split(r'[.!?]+', text) splits using ., !, or ?.
 
-# How it works:
-# Characters → counts everything (spaces, punctuation, etc.)
-# Words → splits text by whitespace
-# Sentences → uses regex to split by ., !, ?
+# re.split() → breaks text into chunks
+# [.!?]+ → finds sentence endings
+# Extra empty string appears → removed with strip()
+
+
+# Output:
+# Characters: 239
+# Words: 38
+# Sentences: 5
 

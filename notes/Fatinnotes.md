@@ -1,4 +1,4 @@
-#### CHAPTER 1 : VARIABLE & DATA TYPE
+# CHAPTER 1 : VARIABLE & DATA TYPE
 General Notes
 # In Terminal
 1. Create virtual environment (venv), is to to isolate project dependencies and prevent conflicts with other projects or your system's global Python installation.
@@ -6,20 +6,23 @@ General Notes
 2. Create (venv) >> 
 python -m venv myvenv
 
-3. Activate (venv)>> 
-myvenv\Scripts\activate
+         ab)   Activate (venv)>> 
+        myvenv\Scripts\activate
 
-4. Command Python in new terminal >>
+2. Command Python in new terminal >> cd py 
 cd py  
 
-5. Run python file in terminal >> py yourfilename.py
+3. Run python file in terminal >> py yourfilename.py
 contoh : py chapter1.py
 
- 6. Please save dulu at the coding tab, if not save, cannot run at terminal.
+4. Please save dulu at the coding tab, if not save, cannot run at terminal.
 Click ctrl+s  at the tab to save 
 
+5. type clear at Terminal utk clearkan semua
+
+#$ CHAPTER 1 : VARIABLE & DATA TYPE
 # VARIABLE
-def: name assigend to particular data
+variable def: name assigend to particular data
 cth:
 a = 1
 b = 3
@@ -45,9 +48,8 @@ print ()
 print (type(variable))
 contoh :
 b = 16
-print (type(b))
+print (type(b))     # Output  <class 'int'>
 
-Jawapan: Int 
  
 # MATH OPERATIONS
 x = 10
@@ -56,10 +58,17 @@ y = 2
 print(x + y)    # Addition
 print(x - y)    # Subtraction
 print(x * y)    # Multiplication
-print(x / y)    # Division
-print(x // y)   # Floor Division
-print(x % y)    # Modulus
-print(x ** y)   # Exponentiation
+print(x / y)    # Division          # 7÷2 =3.5
+print(x // y)   # Floor Division    # 7/2 = 3 , It drops the .5 and keeps 3.
+print(x % y)    # Modulus ## baki(remainder) selepas bahagi
+                         # utk nak check genap cth baki 0/ganjil cth baki 1
+                         # 8 % 2 = 0 → sebab 8 bahagi 2 tiada baki
+                         # 7 % 4 = 3 → sebab 7 ÷ 4 = 1 baki 3
+                         # 15 % 6 = 3 → sebab 15 ÷ 6 = 2 baki 3
+print(x ** y)   # Exponentiation 
+                        # 5^2 = 25 → 5 × 5
+                        # 3^4 = 81 → 3 × 3 × 3 × 3
+                        # 7^0 =1 (any number to power 0 equals 1)
 
 
 # Exercise - Convert Celsius to Fahrenheit
@@ -67,21 +76,21 @@ C = 25
 F = (C *9/5 + 32)
 print(F)
 
-### CHAPTER 2 : STRING MANIPULATION
-# STRING MANIPULATION
+
+# CHAPTER 2 : STRING MANIPULATION
+STRING MANIPULATION
 # A. STRING CREATION
-1. Single Quote (one liner)
-2. Double Quote (one Liner)
-3. Triple Quote (Multiliner)
+1. Single Quote (one liner)        # 'Hello' 
+2. Double Quote (one Liner)        # "World"
+3. Triple Quote (Multiliner)       # """ I am still new 
+                                    and hope I can learn Python and understand it well"""
 
-single_quote = 'Hello'
-double_quote = "World"
-triple_quote = """ I am still new 
-and hope I can learn Python and understand it well"""
-
-***** ZAROL SAID, PLEASE USE DOUBLE QUOTE INSTEAD OF SINGLE QUOTE
+***** ZAROL SUGGEST USE DOUBLE QUOTE INSTEAD OF SINGLE QUOTE TO AVOID CONFUSION
 
 # B. STRING INDEXING & SLICING
+    # Indexing: number(position) for each character
+    # Slicing: grabbing multiple characters [start:stop:step]
+
 text = "Python Programming"
 print(text[0])      # (first character)
 print (text[-1])    # (last character)
@@ -90,7 +99,7 @@ print (text[:6])    # ( from start to 5)
 print (text[7:])    # (7 to end)
 print (text[7:16:2]) # (from 7 to 15, every 2 step)
 
-jawapan:
+Output:
 P
 g
 Python
@@ -102,7 +111,7 @@ Pormi
 # C. STRING METHODS
 name = " bob the builder "
 
-print(len(name))                    # Length, dia kira characters, sekali space front & back
+print(len(name))                    # Length characters, sekali space front & back
 print(name.strip())                 # Remove whitespace, buang front & back spaces, 
                                     # yg tengah punya space bukan whitespace ye.
 print(name.upper())                 # Uppercase
@@ -110,7 +119,7 @@ print(name.lower())                 # Lowercase
 print(name.title())                 # Title case
 print(name.replace("bob","jane"))   # Replace
 
-jawapan:
+Output:
 17
 bob the builder
  BOB THE BUILDER
@@ -130,8 +139,10 @@ print(message_1)
 print(message_2)
 print(message_3)
 
-jawapan:
+Output:
 My name is John Doe and I am 30 years old.
 My name is John Doe and I am 30 years old.
 My name is John Doe and I am 30 years old.
 
+
+# CHAPTER 3: IO_VALIDATION

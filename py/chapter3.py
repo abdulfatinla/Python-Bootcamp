@@ -1,4 +1,4 @@
-#INPUT / OUTPUT VALIDATION
+# INPUT / OUTPUT VALIDATION
 
 name = input("Enter your name:")
 height = float (input("Enter your height (in cm): "))  #Convert to float
@@ -18,4 +18,4 @@ while True:
 print(f"Hello, {name}!")
 print(f"You are {age} years old and {height} cm tall")
 
-Exercise
+# Exercise
